@@ -1,0 +1,107 @@
+.third_page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--gray-bg-color);
+}
+
+.header_third_page {
+    width: 682px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+}
+
+.large_header_third_page {
+    margin-top: 192px;
+    font-size: var(--large-font-size);
+    font-weight: var(--button-font-weight);
+}
+
+.small_header_third_page {
+    margin-top: 35px;
+    font-size: 16px;
+    color: var(--small-text-color);
+}
+
+
+.third_page_card_block {
+    width: 1152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.third_page_card {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+    background-color: white;
+    transition: 0.4s ease all;
+    &:hover {
+        box-shadow: 15px 25px 56px rgba(0, 0, 0, 0.06);
+    }
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.large_card_text {
+    margin-top: 25px;
+    font-size: var(--midle-font-size);
+    font-weight: var(--button-font-weight);
+}
+
+.small_card_text {
+    margin-top: 22px;
+    color: var(--small-text-color);
+    font-size: var(--small-font-size);
+}
+
+.learn_more_prime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+    margin-bottom: 100px;
+    width: 150px;
+    height: var(--button-height);
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    font-size: var(--button-font-size);
+    border: var(--button-border-style);
+    box-shadow: var(--button-box-shadow);
+    border-radius: var(--button-border-radius);
+    font-weight: var(--button-font-weight);
+    text-align: center;
+}
+
+.arrow {
+    height: 12px;
+    transform: rotate(90deg);
+    fill: white;
+    stroke: white;
+    margin-left: 5px;
+    height: 8px;
+}
+
+
+@media (height < 1200px) {
+    .large_header_third_page {
+        margin-top: 92px;
+    }
+    .small_header_third_page {
+        margin-top: 19px;
+    }
+}
